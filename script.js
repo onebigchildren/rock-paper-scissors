@@ -11,34 +11,36 @@ function getComputerChoice() { // Randomly return either ‘Rock’, ‘Paper’
 
 function playRound(playerSelection, computerSelection) {
 
-    if ( (playerSelection.trim()).match(/^rock$/i) === true ) {
-        if ( computerSelection.match('Rock') === true ) {
-            return 'You tied!\nRock ties with rock.';
-        } else if ( computerSelection.match('Paper') === true ) {
-            return 'You lose!\nPaper beats rock.';
+    if ( (/^rock$/i).test(playerSelection.trim()) === true ) {
+        if ( computerSelection === 'Rock' ) {
+            return 'You tied!\nYour rock ties with HAL 9000\'s rock.';
+        } else if ( computerSelection === 'Paper' ) {
+            return 'You lose!\nHAL 9000\'s paper beats your rock.';
         } else {
-            return 'You win!\nRock crushes scissors.';
+            return 'You win!\nYour rock crushes HAL 9000\'s scissors.';
         }
 
-    } else if ( (playerSelection.trim()).match(/^paper$/i) === true ) {
-        if ( computerSelection.match('Rock') === true ) {
-            return 'You win!\nPaper beats rock.';
-        } else if ( computerSelection.match('Paper') === true ) {
-            return 'You tied!\nPaper ties with paper.';
+    } else if ( (/^paper$/i).test(playerSelection.trim()) === true ) {
+        if ( computerSelection === 'Rock' ) {
+            return 'You win!\nYour paper beats HAL 9000\'s rock.';
+        } else if ( computerSelection === 'Paper' ) {
+            return 'You tied!\nYour paper ties with HAL 9000\'s paper.';
         } else {
-            return 'You lose!\nScissors chop up paper.';
+            return 'You lose!\nHAL 9000\'s scissors chop up your paper.';
         }
 
-    } else if ( (playerSelection.trim()).match(/^scissors$/i) === true ) {
-        if ( computerSelection.match('Rock') === true ) {
-            return 'You lose!\nRock crushes scissors.';
-        } else if ( computerSelection.match('Paper') === true ) {
-            return 'You win!\nScissors chop up paper.';
+    } else if ( (/^scissors$/i).test(playerSelection.trim()) === true ) {
+        if ( computerSelection === 'Rock' ) {
+            return 'You lose!\nHAL 9000\'s rock crushes your scissors.';
+        } else if ( computerSelection === 'Paper' ) {
+            return 'You win!\nYour scissors chop up HAL 9000\'s paper.';
         } else {
-            return 'You tied!\nScissors tie with scissors.';
+            return 'You tied!\nYour scissors tie with HAL 9000\'s scissors.';
         }
 
     } else {
-        return 'Error! Player Selection not valid.'
+        return 'Error! Player selection not valid.'
     }
 }
+
+let computerSelection = getComputerChoice()
