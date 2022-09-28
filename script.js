@@ -370,20 +370,20 @@ function showComputerDialogue() {
     setTimeout(function() {
         msg2.style.display = "flex";
         updateScroll();
-    }, 3000);
+    }, 2500);
     setTimeout(function() {
         msg3.style.display = "flex";
         updateScroll();
-    }, 5000);
+    }, 4300);
     setTimeout(function() {
         msg4.style.display = "flex";
         updateScroll();
-    }, 7000);
+    }, 6200);
     setTimeout(function() {
         skip.style.display = "none";
         buttonChooser.style.display = "flex";
         updateScroll();
-    }, 8500);
+    }, 7800);
 }
 
 function skipIntro() {
