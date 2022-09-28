@@ -50,7 +50,7 @@ body {
     text-align: center;
     font-size: 0.8em;
     color: #777;
-    padding: 32px 0 12px;
+    padding: 32px 0 6px;
 }
 
 .chat {
@@ -79,7 +79,7 @@ body {
     display: flex;
     align-items: center;
     border-bottom: 1.5px solid rgb(45 45 42);
-    padding: 1.2em 1.8em;
+    padding: 1.2em 1.4em;
     background-color:rgb(29, 131, 61);
     position: sticky;
     top: 0;
@@ -144,6 +144,14 @@ div.emoji {
 .narrator {
     display: flex;
     align-items: flex-end;
+}
+
+.narrator .emoji,
+.btn,
+.skip,
+#play-again,
+.external-link {
+    cursor: pointer;
 }
 
 .narrator .msg-content {
