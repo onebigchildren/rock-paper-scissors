@@ -1,9 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 html {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 *, *::after, *::before {
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 
 .avatar {
@@ -12,6 +21,8 @@ html {
 }
 
 div.msg {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0.8em 0 0.8em;
 }
@@ -36,10 +47,17 @@ h2 {
 }
 
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 98vh;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: rgb(229, 229, 229);
     color: rgb(45 45 42);
     font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
@@ -62,12 +80,18 @@ body {
     background: rgb(244 244 244);
     border-radius: 52px;
     border: 1.5px solid rgb(45 45 42);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 1em auto 4px;
-    justify-content: space-between;
-    flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-shadow: 20px 20px 0px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 20px 20px 0px 0px rgba(0,0,0,1);
     box-shadow: 20px 20px 0px 0px rgba(0,0,0,1);
 }
 
@@ -76,8 +100,12 @@ body {
 }
 
 .chat-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: 1.5px solid rgb(45 45 42);
     padding: 1.2em 1.4em;
     background-color:rgb(29, 131, 61);
@@ -86,21 +114,37 @@ body {
 }
 
 .chat-topbar {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 0 0 0.5em;
 }
 
 .chat-body {
     margin: 0.4em 1.4em 1em 1.4em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .hal {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 a, a:hover, a:active, a:visited {
@@ -122,28 +166,41 @@ a, a:hover, a:active, a:visited {
 
 .player {
     margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     gap: 0.7em;
 }
 
 .msg > .player {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
 }
 
 span.emoji {
     font-size: 1.8em;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
 }
 
 div.emoji {
     font-size: 1.8em;
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
 }
 
 .narrator {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .narrator .emoji,
@@ -182,14 +239,25 @@ div.emoji {
 }
 
 .weapon-msg {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .buttons.player {
     margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 0.8em;
     padding: 0.4em 0 0.2em;
@@ -200,7 +268,6 @@ div.emoji {
     border-radius: 30px;
     border: 1.5px solid rgb(45 45 42);
     -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
     box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
     padding: 6px;
 }
@@ -219,32 +286,78 @@ div.emoji {
 }
 
 #rock-btn:hover, #rock-btn:active {
-    animation: flash-rock-hover 0.8s linear infinite;
+    -webkit-animation: flash-rock-hover 0.8s linear infinite;
+            animation: flash-rock-hover 0.8s linear infinite;
 }
 
 #paper-btn:hover, #paper-btn:active {
-    animation: flash-paper-hover 0.8s linear infinite;
+    -webkit-animation: flash-paper-hover 0.8s linear infinite;
+            animation: flash-paper-hover 0.8s linear infinite;
 }
 
 #scissors-btn:hover, #scissors-btn:active {
-    animation: flash-scissors-hover 0.8s linear infinite;
+    -webkit-animation: flash-scissors-hover 0.8s linear infinite;
+            animation: flash-scissors-hover 0.8s linear infinite;
 }
 
 .btn:hover, .btn:active, .btn-square:hover, .btn-square:active  {
     -webkit-box-shadow: none;
-    -moz-box-shadow: none;
     box-shadow: none;
-    transform: translate(2px, 2px);
+    -webkit-transform: translate(2px, 2px);
+        -ms-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
     background-color: rgb(242, 242, 242);
 }
 
 .rainbow {
-    animation: rainbow 2.5s linear;
-    animation-iteration-count: infinite;
+    -webkit-animation: rainbow 2.5s linear;
+            animation: rainbow 2.5s linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 
 .player-weapon, .computer-weapon {
     font-size: 2em;
+}
+
+
+@-webkit-keyframes rainbow-bg{
+    100%,0%{
+        background-color: rgb(216, 124, 124);
+    }
+    8%{
+        background-color: rgb(204, 111, 60);
+    }
+    16%{
+        background-color: rgb(187, 187, 110);
+    }
+    25%{
+        background-color: rgb(114, 162, 67);
+    }
+    33%{
+        background-color: rgb(122, 154, 122);
+    }
+    41%{
+        background-color: rgb(67, 93, 80);
+    }
+    50%{
+        background-color: rgb(133, 157, 157);
+    }
+    58%{
+        background-color: rgb(0,127,255);
+    }
+    66%{
+        background-color: rgb(76, 76, 224);
+    }
+    75%{
+        background-color: rgb(167, 108, 226);
+    }
+    83%{
+        background-color: rgb(238, 178, 238);
+    }
+    91%{
+        background-color: rgb(220, 111, 165);
+    }
 }
 
 
@@ -284,6 +397,46 @@ div.emoji {
     }
     91%{
         background-color: rgb(220, 111, 165);
+    }
+}
+
+
+@-webkit-keyframes rainbow{
+    100%,0%{
+        color: rgb(225, 86, 86);
+    }
+    8%{
+        color: rgb(255,127,0);
+    }
+    16%{
+        color: rgb(161, 161, 21);
+    }
+    25%{
+        color: rgb(127,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+    }
+    41%{
+        color: rgb(0,255,127);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    58%{
+        color: rgb(0,127,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+    }
+    75%{
+        color: rgb(127,0,255);
+    }
+    83%{
+        color: rgb(255,0,255);
+    }
+    91%{
+        color: rgb(255,0,127);
     }
 }
 
@@ -328,12 +481,31 @@ div.emoji {
 }
 
 
+@-webkit-keyframes flash-rock {
+    100%, 0% {
+        background-color: rgb(200, 35, 35);
+    }
+    50% {
+        background-color: rgb(53, 13, 12);
+    }
+}
+
+
 @keyframes flash-rock {
     100%, 0% {
         background-color: rgb(200, 35, 35);
     }
     50% {
         background-color: rgb(53, 13, 12);
+    }
+}
+
+@-webkit-keyframes flash-paper {
+    100%, 0% {
+        background-color: rgb(69, 197, 34);
+    }
+    50% {
+        background-color: rgb(22, 45, 15);
     }
 }
 
@@ -346,12 +518,30 @@ div.emoji {
     }
 }
 
+@-webkit-keyframes flash-scissors {
+    100%, 0% {
+        background-color: rgb(67, 38, 231);
+    }
+    50% {
+        background-color: rgb(14, 10, 52);
+    }
+}
+
 @keyframes flash-scissors {
     100%, 0% {
         background-color: rgb(67, 38, 231);
     }
     50% {
         background-color: rgb(14, 10, 52);
+    }
+}
+
+@-webkit-keyframes flash-rock-hover {
+    100%, 0% {
+        background-color: rgb(201, 24, 57);
+    }
+    50% {
+        background-color: rgb(69, 28, 22);
     }
 }
 
@@ -364,12 +554,30 @@ div.emoji {
     }
 }
 
+@-webkit-keyframes flash-paper-hover {
+    100%, 0% {
+        background-color: rgb(68, 194, 25);
+    }
+    50% {
+        background-color: rgb(56, 114, 80);
+    }
+}
+
 @keyframes flash-paper-hover {
     100%, 0% {
         background-color: rgb(68, 194, 25);
     }
     50% {
         background-color: rgb(56, 114, 80);
+    }
+}
+
+@-webkit-keyframes flash-scissors-hover {
+    100%, 0% {
+        background-color: rgb(50, 23, 201);
+    }
+    50% {
+        background-color: rgb(154, 137, 175);
     }
 }
 
