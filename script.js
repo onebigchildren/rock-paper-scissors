@@ -74,7 +74,7 @@ function currentMatchStatusComputerDialogue() {
                 'Did I mention you\'re losing?',
                 'Catch up to me or I win! Hehehe!!!',
                 'I can feel it... I\'m going to win...',
-                'Boop boop beep beep!!!!!1!111!one!11!'
+                'Boop boop beep beep!!!!!1!111!one!11!',
                 ]
             const random = Math.floor(Math.random() * computerTaunt.length);
             return computerTaunt[random];
