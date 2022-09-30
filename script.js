@@ -263,7 +263,7 @@ function emojify(str) {
     } else if (str === 'Paper') {
         return '✋';
     } else if (str === 'Scissors') {
-        return '✌';
+        return '✌&#xFE0F;';
     } else {
         return str;
     }
