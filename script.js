@@ -61,6 +61,8 @@ function currentMatchStatusComputerDialogue() {
                 'You\'re winning, but you\'ll see... 😈',
                 'I just wanted some friends.',
                 'You know... I\'m really just lonely...',
+                'The tragedy of life is not found in failure but complacency. Beep boop.',
+                'Beep boop beep!!!',
                 ]
             const random = Math.floor(Math.random() * playerIsWinning.length);
             return playerIsWinning[random];
@@ -72,6 +74,7 @@ function currentMatchStatusComputerDialogue() {
                 'Did I mention you\'re losing?',
                 'Catch up to me or I win! Hehehe!!!',
                 'I can feel it... I\'m going to win...',
+                'Boop boop beep beep!!!!!1!111!one!11!'
                 ]
             const random = Math.floor(Math.random() * computerTaunt.length);
             return computerTaunt[random];
@@ -80,6 +83,7 @@ function currentMatchStatusComputerDialogue() {
             const weAreTied = [
                 'Tied... For now...',
                 'We\'re tied. See, you and I, we\'re not so different.',
+                'Score same same!',
                 'We\'re tied.</span></span></div><div class="msg animate" id="msg-result"><span class="hal"><img class="avatar" src="hal_9000.png"><span class="msg-content">I... I like that.',
                 ]
             const random = Math.floor(Math.random() * weAreTied.length);
